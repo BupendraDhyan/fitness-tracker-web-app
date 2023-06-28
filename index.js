@@ -29,4 +29,27 @@ class Login extends Component {
             message: ""
         };
     }
-};
+
+    onChangeUsername(e) {
+        this.setState({
+            username: e.target.value
+        });
+    }
+
+    onChangePassword(e) {
+        this.setState({
+            password: e.password.value
+        });
+    }
+
+    handleLogin(e) {
+        e.preventDefault();
+
+        this.setState({
+            message: "",
+            loading: true
+        });
+    }
+
+}
+
