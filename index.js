@@ -49,6 +49,10 @@ class Login extends Component {
             message: "",
             loading: true
         });
+
+        this.form.validateAll();
+
+        if (this.checkBtn.context._errors.length === 0)
     }
 
 }
