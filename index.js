@@ -97,7 +97,16 @@ class Login extends Component {
                         }
                         }
                         >
-                            
+                          <div className="form-group">
+                            <label htmlFor="username">username</label>
+                            <input
+                            type="text"
+                            className="form-control"
+                            name="username"
+                            value={this.state.username}
+                            validations={[required]}
+                            />
+                            </div>  
                         </Form>
                 </div>
             </div>
