@@ -106,7 +106,19 @@ class Login extends Component {
                             value={this.state.username}
                             validations={[required]}
                             />
-                            </div>  
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="password">password</label>
+                                <input 
+                                    type="text"
+                                    className="form-control"
+                                    name="username"
+                                    value={this.state.username}
+                                    onChange={this.onChangeUsername}
+                                    validations={[required]}
+                                    />
+                                </div>  
                         </Form>
                 </div>
             </div>
