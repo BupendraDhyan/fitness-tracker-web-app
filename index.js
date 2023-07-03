@@ -118,7 +118,17 @@ class Login extends Component {
                                     onChange={this.onChangeUsername}
                                     validations={[required]}
                                     />
-                                </div>  
+                                </div>
+                            <div className="form-group">
+                                <button
+                                    className="btn btn-primary btn-block"
+                                    disabled={this.state.loading}>
+                                        {this.state.loading && (
+                                            <span className="spinner-border spinner-border-sm"></span>
+                                        )}
+                                        <span>Login</span>
+                                    </button>
+                            </div>
                         </Form>
                 </div>
             </div>
