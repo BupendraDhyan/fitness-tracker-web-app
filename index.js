@@ -129,6 +129,14 @@ class Login extends Component {
                                         <span>Login</span>
                                     </button>
                             </div>
+
+                            {this.state.message && (
+                                <div className="form-group">
+                                    <div className="alert alert-danger" role="alert">
+                                        {this.state.message}
+                                    </div>
+                                </div>
+                            )}
                         </Form>
                 </div>
             </div>
