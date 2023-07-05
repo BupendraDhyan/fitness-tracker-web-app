@@ -137,11 +137,18 @@ class Login extends Component {
                                     </div>
                                 </div>
                             )}
+                            <CheckButton
+                                style={{ display: "none" }}
+                                ref={c => {
+                                    this.checkBtn = c;
+                                }}
+                            />
                         </Form>
                 </div>
             </div>
-        )
+        );
     }
 
 }
 
+export default WithRouter(Login);
